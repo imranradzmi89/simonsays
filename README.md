@@ -1,6 +1,7 @@
 # simonsays
 Basic Simon Says Game 
 <br>
+ 
 Emulates the ubiquitous Simon Says game. <br>
 Basic functionality has been completed. <br>
 Features to add: <br>
@@ -9,3 +10,5 @@ Features to add: <br>
 - Game sounds <br>
 
 Styling to be added
+
+
