@@ -7,10 +7,12 @@ a)click eventlisteners - DONE
 b)push input sequence - DONE
 c)compare with random seq -DONE
 iii) handle game state 
-a)increase level with each correct solution
+a)increase level with each correct solution-DONE
 iv) game options 
 a)choose level 
-b) highest score 
+b) highest score :
+-creates new object upon each game instance, prompting for plyr name
+-each entry after game failure is to be an object with plyr name & score key-value 
 */
 //select & initialize the fellas
 
@@ -18,7 +20,8 @@ let playerSeq = [];
 let start = document.getElementById('start');
 let seq = [];
 let level = 4;
-//proper sleep func
+//proper sleep func, not necessary but just for practice
+//std. setTimeout works just as well
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
@@ -88,10 +91,11 @@ sleep(500).then( () => {
     alert("Now it's your turn!");
     document.querySelectorAll('.seq-btn').forEach( e => e.disabled = false);
     document.querySelectorAll('.seq-btn').forEach(e => e.addEventListener('click', playerClick))
-    }  })
+    }  
+})
     
         
-},1000);
+
 
 })
 
